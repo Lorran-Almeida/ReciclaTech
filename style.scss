@@ -14,22 +14,23 @@ $buttom-hover-color: #21c05c;
   flex-wrap: nowrap;
 }
 header {
-  margin: 0 50px 0 50px;
+  margin: 0 5vw 0 5vw;
   .nav-bar {
+    display: inline;
     justify-content: center;
+    align-items: center;
     font-family: "Poppins", bold;
-    padding-top: 3vh;
-    height: 10vh;
   }
   .nav-div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1vh 2vw 1vh 2vw;
+    padding: 3vh 2vw 1vh 2vw;
   }
 
   .nav-div ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     list-style: none;
     font-weight: 400;
@@ -68,37 +69,38 @@ header {
     text-decoration: none;
   }
 
-  .nav-div button {
+  .nav-div .comecar-agora button {
     border: none;
     font-size: 1rem;
     padding: 18px 28px 18px 28px;
     border-radius: 6px;
     background-color: $cor5-verde-color;
     color: $cor1-offwhite-color;
-        &:hover {
-    background-color: $buttom-hover-color;
-    cursor: pointer;
+    &:hover {
+      background-color: $buttom-hover-color;
+      cursor: pointer;
+    }
   }
-  }
-  .nav-div button a {
+  .nav-div .comecar-agora button a {
     color: $cor1-offwhite-color;
     text-decoration: none;
   }
   .line {
-      border: none;
-      display: flex;
-      justify-content: center;
-      background-color: $linha-cinza-color;
-      height: 1px;
-      margin-left: 40px;
-      margin-right: 40px;
-    }
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $linha-cinza-color;
+    height: 1px;
+    margin: 1vh 2vw 1vh 2vw;
+  }
 }
 
 /////////////////////////
 
 main {
   .first-section {
+    .home-text-buttons-img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -110,68 +112,68 @@ main {
         color: $cor4-marinho-color;
         width: 40vw;
       }
-        .home-text h1 {
-          font-family: "Poppins", bold;
-          font-weight: 700;
-          line-height: 130%;
-          font-size: 60px;
-          font-size: 3.75rem;
-          margin-bottom: 20px;
-        }
-        .home-text p {
-          font-family: "Inter", sans-serif;
-          font-size: 1.2rem;
-        }
+      .home-text h1 {
+        font-family: "Poppins", bold;
+        font-weight: 700;
+        line-height: 130%;
+        font-size: 6vh;
+        margin-bottom: 20px;
+      }
+      .home-text p {
+        font-family: "Inter", sans-serif;
+        font-size: 1.2rem;
+      }
 
-        .buttonsfrontpage {
-          display: flex;
-          justify-content: left;
-          gap: 40px;
-          padding-top: 20px;
+      .buttonsfrontpage {
+        display: flex;
+        justify-content: left;
+        gap: 40px;
+        padding-top: 20px;
+      }
+      .doarbutton {
+        border: none;
+        width: 190px;
+        height: 62px;
+        gap: 10px;
+        border-radius: 6px;
+        background-color: $cor5-verde-color;
+        color: $cor1-offwhite-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+        img {
+          padding-left: 10px;
         }
-        .doarbutton {
-          border: none;
-          width: 190px;
-          height: 62px;
-          gap: 10px;
-          border-radius: 6px;
-          background-color: $cor5-verde-color;
-          color: $cor1-offwhite-color;
-          font-family: "Poppins", bold;
-          font-weight: 400;
-          font-size: 1rem;
-          img {
-            padding-left: 10px;
-          }
-          &:hover {
-            background-color: $buttom-hover-color;
-            cursor: pointer;
-          }
-        }
-        .queroadbutton {
-          border: solid 1px $cor6-azul-color;
-          background-color: transparent;
-          width: 190px;
-          height: 62px;
-          gap: 10px;
-          border-radius: 6px;
-          color: $cor6-azul-color;
-          font-family: "Poppins", bold;
-          font-weight: 400;
-          font-size: 1rem;
-          img {
-            color: $cor6-azul-color;
-            padding-left: 10px;
-          }
+        &:hover {
+          background-color: $buttom-hover-color;
+          cursor: pointer;
         }
       }
-      .simbolo-circuitos {
-    align-items: right;
-  }
+      .queroadbutton {
+        border: solid 1px $cor6-azul-color;
+        background-color: transparent;
+        width: 190px;
+        height: 62px;
+        gap: 10px;
+        border-radius: 6px;
+        color: $cor6-azul-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+        img {
+          color: $cor6-azul-color;
+          padding-left: 10px;
+        }
+      }
     }
+    }
+    .simbolo-circuitos {
+    
+    }
+  }
   //////////////////////////////////////
 
-  .barraDeContagem {
+  .barra-de-contagem {
     background-color: $cor2-cinzaclaro-color;
     font-family: "Poppins", bold;
     display: flex;
@@ -180,48 +182,47 @@ main {
     text-align: center;
     height: 25vh;
     width: 100%;
-
-    .contador {
-      h2 {
-        color: $cor5-verde-color;
-        font-size: 2.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
+  }
+  .barra-de-contagem .contador {
+    h2 {
+      color: $cor5-verde-color;
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1rem;
     }
   }
 
-  .funciona {
-    display: flexbox;
-    flex-direction: column;
+  .como-funciona {
+    display: inline-block;
+    flex-direction: left;
     align-items: center;
     color: $cor4-marinho-color;
-    padding-top: 80px;
-    padding-left: 95px;
+    padding: 10vh 0 5vh 5vw;
     h1 {
       font-family: "Poppins", bold;
       font-weight: 700;
       font-size: 2.5rem;
-      padding-bottom: 20px;
     }
     p {
       font-family: "Inter", sans-serif;
       font-size: 1.5rem;
     }
   }
-  .caixasDoadoresAdquirentes {
+  .caixas-doadores-adquirentes {
     display: flex;
     justify-content: center;
     align-items: center;
-    .doadores {
+    }
+    .caixas-doadores-adquirentes .doadores {
       background-color: $cor2-cinzaclaro-color;
       border-radius: 10px;
       gap: 80px;
       padding-top: 60px;
       width: 450px;
       padding: 45px;
-      .paraDoadores {
+    }
+      .caixas-doadores-adquirentes .doadores  .paraDoadores {
         display: flex;
         align-items: center;
         gap: 5px;
@@ -255,5 +256,37 @@ main {
       .dica {
       }
     }
+
+@media (max-width: 768px) {
+  header {
+    .nav-bar {
+      max-width: 30vw;
+      .logo-recicla {
+        display: flex;
+        justify-content: left;
+      }
+    }
+    .nav-div {
+      flex-direction: column;
+      align-items: left;
+      padding-top: 5vh;
+    }
+    .nav-div ul {
+      display: flex;
+      justify-content: left;
+      padding-top: 2vh;
+      gap: 2vw;
+    }
+    .nav-div .comecar-agora button {
+      display: flex;
+      justify-content: right;
+      padding: 3vw 6vw 3vw 6vw;
+    }
+  }
+  main {
+    .home-text-buttons-img {
+      width: 150vw;
+      background-color: red;
+      }
   }
 }

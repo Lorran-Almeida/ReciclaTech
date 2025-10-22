@@ -6,22 +6,23 @@
 }
 
 header {
-  margin: 0 50px 0 50px;
+  margin: 0 5vw 0 5vw;
 }
 header .nav-bar {
+  display: inline;
   justify-content: center;
+  align-items: center;
   font-family: "Poppins", bold;
-  padding-top: 3vh;
-  height: 10vh;
 }
 header .nav-div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1vh 2vw 1vh 2vw;
+  padding: 3vh 2vw 1vh 2vw;
 }
 header .nav-div ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   font-weight: 400;
@@ -58,7 +59,7 @@ header .nav-div a {
   color: #1f2937;
   text-decoration: none;
 }
-header .nav-div button {
+header .nav-div .comecar-agora button {
   border: none;
   font-size: 1rem;
   padding: 18px 28px 18px 28px;
@@ -66,11 +67,11 @@ header .nav-div button {
   background-color: #16a34a;
   color: #f0fdf4;
 }
-header .nav-div button:hover {
+header .nav-div .comecar-agora button:hover {
   background-color: #21c05c;
   cursor: pointer;
 }
-header .nav-div button a {
+header .nav-div .comecar-agora button a {
   color: #f0fdf4;
   text-decoration: none;
 }
@@ -78,43 +79,42 @@ header .line {
   border: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #b4aeae;
   height: 1px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 1vh 2vw 1vh 2vw;
 }
 
-main .first-section {
+main .first-section .home-text-buttons-img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10vh 5vw 10vh 5vw;
 }
-main .first-section .front-text-button .home-text {
+main .first-section .home-text-buttons-img .front-text-button .home-text {
   display: flex;
   flex-direction: column;
   color: #1f2937;
   width: 40vw;
 }
-main .first-section .front-text-button .home-text h1 {
+main .first-section .home-text-buttons-img .front-text-button .home-text h1 {
   font-family: "Poppins", bold;
   font-weight: 700;
   line-height: 130%;
-  font-size: 60px;
-  font-size: 3.75rem;
+  font-size: 6vh;
   margin-bottom: 20px;
 }
-main .first-section .front-text-button .home-text p {
+main .first-section .home-text-buttons-img .front-text-button .home-text p {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
 }
-main .first-section .front-text-button .buttonsfrontpage {
+main .first-section .home-text-buttons-img .front-text-button .buttonsfrontpage {
   display: flex;
   justify-content: left;
   gap: 40px;
   padding-top: 20px;
 }
-main .first-section .front-text-button .doarbutton {
+main .first-section .home-text-buttons-img .front-text-button .doarbutton {
   border: none;
   width: 190px;
   height: 62px;
@@ -126,14 +126,14 @@ main .first-section .front-text-button .doarbutton {
   font-weight: 400;
   font-size: 1rem;
 }
-main .first-section .front-text-button .doarbutton img {
+main .first-section .home-text-buttons-img .front-text-button .doarbutton img {
   padding-left: 10px;
 }
-main .first-section .front-text-button .doarbutton:hover {
+main .first-section .home-text-buttons-img .front-text-button .doarbutton:hover {
   background-color: #21c05c;
   cursor: pointer;
 }
-main .first-section .front-text-button .queroadbutton {
+main .first-section .home-text-buttons-img .front-text-button .queroadbutton {
   border: solid 1px #2563eb;
   background-color: transparent;
   width: 190px;
@@ -145,14 +145,11 @@ main .first-section .front-text-button .queroadbutton {
   font-weight: 400;
   font-size: 1rem;
 }
-main .first-section .front-text-button .queroadbutton img {
+main .first-section .home-text-buttons-img .front-text-button .queroadbutton img {
   color: #2563eb;
   padding-left: 10px;
 }
-main .first-section .simbolo-circuitos {
-  align-items: right;
-}
-main .barraDeContagem {
+main .barra-de-contagem {
   background-color: #f3f5f8;
   font-family: "Poppins", bold;
   display: flex;
@@ -162,37 +159,35 @@ main .barraDeContagem {
   height: 25vh;
   width: 100%;
 }
-main .barraDeContagem .contador h2 {
+main .barra-de-contagem .contador h2 {
   color: #16a34a;
   font-size: 2.5rem;
 }
-main .barraDeContagem .contador p {
+main .barra-de-contagem .contador p {
   font-size: 1rem;
 }
-main .funciona {
-  display: flexbox;
-  flex-direction: column;
+main .como-funciona {
+  display: inline-block;
+  flex-direction: left;
   align-items: center;
   color: #1f2937;
-  padding-top: 80px;
-  padding-left: 95px;
+  padding: 10vh 0 5vh 5vw;
 }
-main .funciona h1 {
+main .como-funciona h1 {
   font-family: "Poppins", bold;
   font-weight: 700;
   font-size: 2.5rem;
-  padding-bottom: 20px;
 }
-main .funciona p {
+main .como-funciona p {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
 }
-main .caixasDoadoresAdquirentes {
+main .caixas-doadores-adquirentes {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .caixasDoadoresAdquirentes .doadores {
+main .caixas-doadores-adquirentes .doadores {
   background-color: #f3f5f8;
   border-radius: 10px;
   gap: 80px;
@@ -200,26 +195,26 @@ main .caixasDoadoresAdquirentes .doadores {
   width: 450px;
   padding: 45px;
 }
-main .caixasDoadoresAdquirentes .doadores .paraDoadores {
+main .caixas-doadores-adquirentes .doadores .paraDoadores {
   display: flex;
   align-items: center;
   gap: 5px;
   padding-bottom: 15px;
 }
-main .caixasDoadoresAdquirentes .doadores .paraDoadores h2 {
+main .caixas-doadores-adquirentes .doadores .paraDoadores h2 {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   color: #16a34a;
 }
-main .caixasDoadoresAdquirentes .doadores p {
+main p {
   display: flex;
   justify-content: center;
   font-family: "Poppins", bold;
   font-size: 1rem;
   padding-bottom: 10px;
 }
-main .caixasDoadoresAdquirentes .doadores .numero {
+main .numero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,4 +225,33 @@ main .caixasDoadoresAdquirentes .doadores .numero {
   height: 32px;
   width: 32px;
   border-radius: 32px;
+}
+@media (max-width: 768px) {
+  header .nav-bar {
+    max-width: 30vw;
+  }
+  header .nav-bar .logo-recicla {
+    display: flex;
+    justify-content: left;
+  }
+  header .nav-div {
+    flex-direction: column;
+    align-items: left;
+    padding-top: 5vh;
+  }
+  header .nav-div ul {
+    display: flex;
+    justify-content: left;
+    padding-top: 2vh;
+    gap: 2vw;
+  }
+  header .nav-div .comecar-agora button {
+    display: flex;
+    justify-content: right;
+    padding: 3vw 6vw 3vw 6vw;
+  }
+  main .home-text-buttons-img {
+    width: 150vw;
+    background-color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
