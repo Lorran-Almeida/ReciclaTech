@@ -1,1 +1,233 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+header {
+  margin: 0 50px 0 50px;
+}
+header .nav-bar {
+  justify-content: center;
+  font-family: "Poppins", bold;
+  padding-top: 3vh;
+  height: 10vh;
+}
+header .nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 2vw 1vh 2vw;
+}
+header .nav-div ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 400;
+  gap: 25px;
+}
+header .logo-recicla {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+header .logo-recicla a {
+  padding-left: 1vw;
+  margin-right: 4vw;
+  color: #1f2937;
+  text-decoration: none;
+}
+header .nav-div ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-weight: 400;
+  gap: 25px;
+}
+header .nav-div li {
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 10px;
+  color: #1f2937;
+}
+header .nav-div a {
+  font-size: 1rem;
+  color: #1f2937;
+  text-decoration: none;
+}
+header .nav-div button {
+  border: none;
+  font-size: 1rem;
+  padding: 18px 28px 18px 28px;
+  border-radius: 6px;
+  background-color: #16a34a;
+  color: #f0fdf4;
+}
+header .nav-div button:hover {
+  background-color: #21c05c;
+  cursor: pointer;
+}
+header .nav-div button a {
+  color: #f0fdf4;
+  text-decoration: none;
+}
+header .line {
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: #b4aeae;
+  height: 1px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+main .first-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10vh 5vw 10vh 5vw;
+}
+main .first-section .front-text-button .home-text {
+  display: flex;
+  flex-direction: column;
+  color: #1f2937;
+  width: 40vw;
+}
+main .first-section .front-text-button .home-text h1 {
+  font-family: "Poppins", bold;
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 60px;
+  font-size: 3.75rem;
+  margin-bottom: 20px;
+}
+main .first-section .front-text-button .home-text p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+main .first-section .front-text-button .buttonsfrontpage {
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  padding-top: 20px;
+}
+main .first-section .front-text-button .doarbutton {
+  border: none;
+  width: 190px;
+  height: 62px;
+  gap: 10px;
+  border-radius: 6px;
+  background-color: #16a34a;
+  color: #f0fdf4;
+  font-family: "Poppins", bold;
+  font-weight: 400;
+  font-size: 1rem;
+}
+main .first-section .front-text-button .doarbutton img {
+  padding-left: 10px;
+}
+main .first-section .front-text-button .doarbutton:hover {
+  background-color: #21c05c;
+  cursor: pointer;
+}
+main .first-section .front-text-button .queroadbutton {
+  border: solid 1px #2563eb;
+  background-color: transparent;
+  width: 190px;
+  height: 62px;
+  gap: 10px;
+  border-radius: 6px;
+  color: #2563eb;
+  font-family: "Poppins", bold;
+  font-weight: 400;
+  font-size: 1rem;
+}
+main .first-section .front-text-button .queroadbutton img {
+  color: #2563eb;
+  padding-left: 10px;
+}
+main .first-section .simbolo-circuitos {
+  align-items: right;
+}
+main .barraDeContagem {
+  background-color: #f3f5f8;
+  font-family: "Poppins", bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 25vh;
+  width: 100%;
+}
+main .barraDeContagem .contador h2 {
+  color: #16a34a;
+  font-size: 2.5rem;
+}
+main .barraDeContagem .contador p {
+  font-size: 1rem;
+}
+main .funciona {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  color: #1f2937;
+  padding-top: 80px;
+  padding-left: 95px;
+}
+main .funciona h1 {
+  font-family: "Poppins", bold;
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+main .funciona p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+main .caixasDoadoresAdquirentes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .caixasDoadoresAdquirentes .doadores {
+  background-color: #f3f5f8;
+  border-radius: 10px;
+  gap: 80px;
+  padding-top: 60px;
+  width: 450px;
+  padding: 45px;
+}
+main .caixasDoadoresAdquirentes .doadores .paraDoadores {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 15px;
+}
+main .caixasDoadoresAdquirentes .doadores .paraDoadores h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #16a34a;
+}
+main .caixasDoadoresAdquirentes .doadores p {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", bold;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+main .caixasDoadoresAdquirentes .doadores .numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #16a34a;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,259 @@
+$cor1-offwhite-color: #f0fdf4;
+$cor2-cinzaclaro-color: #f3f5f8;
+$cor3-cinza-color: #4b5563;
+$cor4-marinho-color: #1f2937;
+$cor5-verde-color: #16a34a;
+$cor6-azul-color: #2563eb;
+$linha-cinza-color: #b4aeae;
+$buttom-hover-color: #21c05c;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+header {
+  margin: 0 50px 0 50px;
+  .nav-bar {
+    justify-content: center;
+    font-family: "Poppins", bold;
+    padding-top: 3vh;
+    height: 10vh;
+  }
+  .nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 2vw 1vh 2vw;
+  }
+
+  .nav-div ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+    gap: 25px;
+  }
+  .logo-recicla {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+  .logo-recicla a {
+    padding-left: 1vw;
+    margin-right: 4vw;
+    color: $cor4-marinho-color;
+    text-decoration: none;
+  }
+
+  .nav-div ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+    gap: 25px;
+  }
+  .nav-div li {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 10px;
+    color: $cor4-marinho-color;
+  }
+  .nav-div a {
+    font-size: 1rem;
+    color: $cor4-marinho-color;
+    text-decoration: none;
+  }
+
+  .nav-div button {
+    border: none;
+    font-size: 1rem;
+    padding: 18px 28px 18px 28px;
+    border-radius: 6px;
+    background-color: $cor5-verde-color;
+    color: $cor1-offwhite-color;
+        &:hover {
+    background-color: $buttom-hover-color;
+    cursor: pointer;
+  }
+  }
+  .nav-div button a {
+    color: $cor1-offwhite-color;
+    text-decoration: none;
+  }
+  .line {
+      border: none;
+      display: flex;
+      justify-content: center;
+      background-color: $linha-cinza-color;
+      height: 1px;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+}
+
+/////////////////////////
+
+main {
+  .first-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vh 5vw 10vh 5vw;
+    .front-text-button {
+      .home-text {
+        display: flex;
+        flex-direction: column;
+        color: $cor4-marinho-color;
+        width: 40vw;
+      }
+        .home-text h1 {
+          font-family: "Poppins", bold;
+          font-weight: 700;
+          line-height: 130%;
+          font-size: 60px;
+          font-size: 3.75rem;
+          margin-bottom: 20px;
+        }
+        .home-text p {
+          font-family: "Inter", sans-serif;
+          font-size: 1.2rem;
+        }
+
+        .buttonsfrontpage {
+          display: flex;
+          justify-content: left;
+          gap: 40px;
+          padding-top: 20px;
+        }
+        .doarbutton {
+          border: none;
+          width: 190px;
+          height: 62px;
+          gap: 10px;
+          border-radius: 6px;
+          background-color: $cor5-verde-color;
+          color: $cor1-offwhite-color;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+          img {
+            padding-left: 10px;
+          }
+          &:hover {
+            background-color: $buttom-hover-color;
+            cursor: pointer;
+          }
+        }
+        .queroadbutton {
+          border: solid 1px $cor6-azul-color;
+          background-color: transparent;
+          width: 190px;
+          height: 62px;
+          gap: 10px;
+          border-radius: 6px;
+          color: $cor6-azul-color;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+          img {
+            color: $cor6-azul-color;
+            padding-left: 10px;
+          }
+        }
+      }
+      .simbolo-circuitos {
+    align-items: right;
+  }
+    }
+  //////////////////////////////////////
+
+  .barraDeContagem {
+    background-color: $cor2-cinzaclaro-color;
+    font-family: "Poppins", bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 25vh;
+    width: 100%;
+
+    .contador {
+      h2 {
+        color: $cor5-verde-color;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .funciona {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    color: $cor4-marinho-color;
+    padding-top: 80px;
+    padding-left: 95px;
+    h1 {
+      font-family: "Poppins", bold;
+      font-weight: 700;
+      font-size: 2.5rem;
+      padding-bottom: 20px;
+    }
+    p {
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+    }
+  }
+  .caixasDoadoresAdquirentes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .doadores {
+      background-color: $cor2-cinzaclaro-color;
+      border-radius: 10px;
+      gap: 80px;
+      padding-top: 60px;
+      width: 450px;
+      padding: 45px;
+      .paraDoadores {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding-bottom: 15px;
+        h2 {
+          font-family: "Inter", sans-serif;
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: $cor5-verde-color;
+        }
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        font-family: "Poppins", bold;
+        font-size: 1rem;
+        padding-bottom: 10px;
+      }
+      .numero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: $cor5-verde-color;
+        height: 32px;
+        width: 32px;
+        border-radius: 32px;
+      }
+      .dica {
+      }
+    }
+  }
+}
