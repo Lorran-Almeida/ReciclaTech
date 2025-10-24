@@ -17,6 +17,19 @@ header .nav-bar {
   align-items: center;
   font-family: "Poppins", bold;
 }
+header .nav-bar .logo-recicla {
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+header .nav-bar .logo-recicla a {
+  padding-left: 1vw;
+  margin-right: 4vw;
+  color: #1f2937;
+  text-decoration: none;
+}
 header .nav-div {
   align-items: center;
   padding: 3vh 2vw 1vh 2vw;
@@ -24,27 +37,6 @@ header .nav-div {
 header .nav-div ul {
   display: flex;
   justify-content: center;
-  align-items: center;
-  list-style: none;
-  font-weight: 400;
-  gap: 25px;
-  white-space: nowrap;
-}
-header .logo-recicla {
-  font-size: 2.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-}
-header .logo-recicla a {
-  padding-left: 1vw;
-  margin-right: 4vw;
-  color: #1f2937;
-  text-decoration: none;
-}
-header .nav-div ul {
-  display: flex;
   align-items: center;
   list-style: none;
   font-weight: 400;
@@ -90,11 +82,13 @@ main .section-inicial .home-text-buttons-img {
   align-items: center;
   padding: 10vh 5vw 10vh 5vw;
 }
+main .section-inicial .home-text-buttons-img .front-text-button {
+  width: 40vw;
+}
 main .section-inicial .home-text-buttons-img .front-text-button .home-text {
   display: flex;
   flex-direction: column;
   color: #1f2937;
-  width: 40vw;
 }
 main .section-inicial .home-text-buttons-img .front-text-button .home-text h1 {
   font-family: "Poppins", bold;
@@ -202,9 +196,8 @@ main .section-doadores .caixas-para {
   background-color: #f3f5f8;
   border-radius: 10px;
   width: 28vw;
-  height: 45vh;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
+  height: 50vh;
+  padding: 5vh;
 }
 main .section-doadores .caixas-para h6 {
   color: #4b5563;
@@ -301,7 +294,7 @@ main .section-produtosdisponiveis .produtos .caixa-produtos {
   text-align: center;
   gap: 5vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
+main .section-produtosdisponiveis .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -309,10 +302,10 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
+main .section-produtosdisponiveis .produto img {
   width: 17.9vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
+main .section-produtosdisponiveis .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -320,11 +313,11 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
+main .section-produtosdisponiveis .produto img {
   width: 17.7vw;
   padding-top: 5px;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
+main .section-produtosdisponiveis .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -332,10 +325,10 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
+main .section-produtosdisponiveis .produto img {
   width: 17.8vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos h4 {
+main .section-produtosdisponiveis h4 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
@@ -343,11 +336,11 @@ main .section-produtosdisponiveis .produtos .caixa-produtos h4 {
   padding-top: 2vh;
   padding-bottom: 1vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .descricao-produtos {
+main .section-produtosdisponiveis .descricao-produtos {
   margin-left: 2vw;
   margin-right: 2vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .descricao-produtos p {
+main .section-produtosdisponiveis .descricao-produtos p {
   color: #4b5563;
   display: flex;
   justify-content: center;
@@ -358,7 +351,7 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .descricao-produtos 
   padding-bottom: 2vh;
   margin: 10px;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos button {
+main .section-produtosdisponiveis button {
   border: none;
   width: 10vw;
   height: 4vh;
@@ -369,40 +362,41 @@ main .section-produtosdisponiveis .produtos .caixa-produtos button {
   font-weight: 200;
   font-size: 0.8rem;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos button:hover {
+main .section-produtosdisponiveis button:hover {
   background-color: #21c05c;
   cursor: pointer;
 }
-main .section-feedback {
+
+.section-feedback {
   display: grid;
   justify-items: center;
   align-items: center;
   padding: 10vh;
 }
-main .section-feedback .top-text {
+.section-feedback .top-text {
   display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding-bottom: 8vh;
 }
-main .section-feedback .top-text h2 {
+.section-feedback .top-text h2 {
   font-family: "Poppins", bold;
   font-weight: 700;
   font-size: 2.5rem;
 }
-main .section-feedback .top-text h3 {
+.section-feedback .top-text h3 {
   color: #4b5563;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
-main .section-feedback .feedbacks {
+.section-feedback .feedbacks {
   display: inline-flex;
   justify-content: center;
   gap: 4vw;
 }
-main .section-feedback .feedbacks .feedback {
+.section-feedback .feedbacks .feedback {
   display: block;
   border: solid #9ca3af 1px;
   border-left: solid #9ca3af 4px;
@@ -410,7 +404,7 @@ main .section-feedback .feedbacks .feedback {
   padding: 4vh;
   padding-bottom: 2vh;
 }
-main .section-feedback .feedbacks .texto-feedback {
+.section-feedback .feedbacks .texto-feedback {
   color: #4b5563;
   font-family: "Poppins", bold;
   font-weight: 400;
@@ -419,52 +413,53 @@ main .section-feedback .feedbacks .texto-feedback {
   padding-bottom: 3vh;
   padding-top: 2vh;
 }
-main .section-feedback .feedbacks .icon-nome-fb {
+.section-feedback .feedbacks .icon-nome-fb {
   display: flex;
   gap: 10px;
 }
-main .section-feedback .feedbacks .nome-feedback {
+.section-feedback .feedbacks .nome-feedback {
   align-self: center;
 }
-main .section-feedback .feedbacks .nome-feedback h5 {
+.section-feedback .feedbacks .nome-feedback h5 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
 }
-main .section-feedback .feedbacks .nome-feedback h6 {
+.section-feedback .feedbacks .nome-feedback h6 {
   color: #4b5563;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 0.9rem;
 }
-main .section-final-text {
+
+.section-final-text {
   background-color: #f3f5f8;
   display: flex;
   justify-content: center;
   text-align: center;
   padding: 7vh;
 }
-main .section-final-text .final-text {
+.section-final-text .final-text {
   width: 40vw;
 }
-main .section-final-text .final-text h1 {
+.section-final-text .final-text h1 {
   font-family: "Poppins", bold;
   font-weight: 700;
   font-size: 2.5rem;
   padding-bottom: 1vh;
 }
-main .section-final-text .final-text h3 {
+.section-final-text .final-text h3 {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 150%;
   padding-bottom: 3vh;
 }
-main .section-final-text .final-text .botoes-final-text {
+.section-final-text .final-text .botoes-final-text {
   display: inline-flex;
   gap: 1vw;
 }
-main .section-final-text .final-text .botoes-final-text .btn-comecar-agora {
+.section-final-text .final-text .botoes-final-text .btn-comecar-agora {
   border: none;
   font-size: 1rem;
   padding: 15px 40px 15px 40px;
@@ -475,11 +470,11 @@ main .section-final-text .final-text .botoes-final-text .btn-comecar-agora {
   font-weight: 400;
   font-size: 1rem;
 }
-main .section-final-text .final-text .botoes-final-text .btn-comecar-agora:hover {
+.section-final-text .final-text .botoes-final-text .btn-comecar-agora:hover {
   background-color: #21c05c;
   cursor: pointer;
 }
-main .section-final-text .final-text .botoes-final-text .btn-saber-mais {
+.section-final-text .final-text .botoes-final-text .btn-saber-mais {
   font-size: 1rem;
   padding: 15px 40px 15px 40px;
   border-radius: 8px;
@@ -553,28 +548,33 @@ footer .direitos {
   * {
     overflow-x: hidden;
   }
-  header .nav-bar {
+  header .topo-site .nav-bar {
     padding-top: 1vh;
-    display: flex;
-    flex-direction: column;
   }
-  header .nav-bar .nav-div {
-    max-width: 650px;
-    min-width: 430px;
+  header .topo-site .nav-bar .nav-div {
+    padding: 0;
+  }
+  header .topo-site .nav-bar .nav-div ul {
+    flex-direction: column;
+    gap: 0px;
+    background-color: #f3f5f8;
+    padding: 2vh;
+  }
+  header .topo-site .nav-bar .nav-div .logo-recicla {
+    margin: 2vh;
+  }
+  header .topo-site .nav-bar .nav-div .logo-recicla a {
+    font-size: 35px;
   }
   main .section-inicial .home-text-buttons-img {
     display: flex;
     flex-direction: column;
   }
+  main .section-inicial .home-text-buttons-img img {
+    display: none;
+  }
   main .section-inicial .home-text-buttons-img .front-text-button {
     width: 90%;
-  }
-  main .section-inicial .home-text-buttons-img .front-text-button .home-text {
-    max-width: 650px;
-    min-width: 450px;
-  }
-  main .section-inicial .home-text-buttons-img .front-text-button .home-text h1 {
-    height: 25vh;
   }
   main .section-inicial .home-text-buttons-img .front-text-button .buttonsfrontpage .doarbutton {
     width: 250px;
@@ -601,11 +601,16 @@ footer .direitos {
   main .section-produtosdisponiveis .produtos .caixa-produtos {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
     align-items: center;
     height: 60vh;
-    width: 90%;
+    width: 70%;
+    padding-bottom: 0;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos .produto .descricao-produtos {
+    padding-bottom: 2vh;
   }
   main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
     padding-top: 0px;
@@ -616,7 +621,7 @@ footer .direitos {
     font-weight: 900;
   }
   main .section-produtosdisponiveis .produtos .caixa-produtos .produto button {
-    width: 50%;
+    width: 90%;
   }
   main .section-feedback {
     gap: 30px;
@@ -649,7 +654,12 @@ footer .direitos {
     padding-left: 2vh;
   }
   main .section-final-text .final-text {
-    width: 90%;
+    width: 100%;
+    gap: 0;
+  }
+  main .section-final-text .final-text .botoes-final-text {
+    justify-content: center;
+    gap: 0;
   }
   footer .section-footer .div-links {
     flex-direction: column;
@@ -675,5 +685,8 @@ footer .direitos {
   footer .section-footer .div-links .coluna p {
     padding-bottom: 0;
     max-width: 100%;
+  }
+  footer .section-footer .direitos {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

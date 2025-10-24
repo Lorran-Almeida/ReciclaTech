@@ -23,79 +23,69 @@ header {
     justify-content: center;
     align-items: center;
     font-family: "Poppins", bold;
+    .logo-recicla {
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      a {
+        padding-left: 1vw;
+        margin-right: 4vw;
+        color: $cor4-marinho-color;
+        text-decoration: none;
+      }
+    }
   }
   .nav-div {
     align-items: center;
     padding: 3vh 2vw 1vh 2vw;
-  }
-
-  .nav-div ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    font-weight: 400;
-    gap: 25px;
-    white-space: nowrap;
-  }
-  .logo-recicla {
-    font-size: 2.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-  }
-  .logo-recicla a {
-    padding-left: 1vw;
-    margin-right: 4vw;
-    color: $cor4-marinho-color;
-    text-decoration: none;
-  }
-
-  .nav-div ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    font-weight: 400;
-    gap: 25px;
-  }
-  .nav-div li {
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 10px;
-    color: $cor4-marinho-color;
-  }
-  .nav-div a {
-    font-size: 1rem;
-    color: $cor4-marinho-color;
-    text-decoration: none;
-  }
-
-  .nav-div .comecar-agora button {
-    border: none;
-    font-size: 1rem;
-    padding: 18px 28px 18px 28px;
-    border-radius: 6px;
-    background-color: $cor5-verde-color;
-    color: $cor1-offwhite-color;
-    &:hover {
-      background-color: $buttom-hover-color;
-      cursor: pointer;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      font-weight: 400;
+      gap: 25px;
     }
+    li {
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 10px;
+      color: $cor4-marinho-color;
+    }
+    a {
+      font-size: 1rem;
+      color: $cor4-marinho-color;
+      text-decoration: none;
+    }
+
+    .comecar-agora button {
+      border: none;
+      font-size: 1rem;
+      padding: 18px 28px 18px 28px;
+      border-radius: 6px;
+      background-color: $cor5-verde-color;
+      color: $cor1-offwhite-color;
+      &:hover {
+        background-color: $buttom-hover-color;
+        cursor: pointer;
+      }
+    }
+    .comecar-agora button a {
+      color: $cor1-offwhite-color;
+      text-decoration: none;
+    }
+    // .nav-line {
+    //   border: none;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   background-color: $linha-cinza-color;
+    //   height: 1px;
+    //   margin: 1vh 2vw 1vh 2vw;
+    // }
   }
-  .nav-div .comecar-agora button a {
-    color: $cor1-offwhite-color;
-    text-decoration: none;
-  }
-  // .nav-line {
-  //   border: none;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   background-color: $linha-cinza-color;
-  //   height: 1px;
-  //   margin: 1vh 2vw 1vh 2vw;
-  // }
 }
 
 ////////////////////////////
@@ -114,11 +104,11 @@ main {
       align-items: center;
       padding: 10vh 5vw 10vh 5vw;
       .front-text-button {
+        width: 40vw;
         .home-text {
           display: flex;
           flex-direction: column;
           color: $cor4-marinho-color;
-          width: 40vw;
         }
         .home-text h1 {
           font-family: "Poppins", bold;
@@ -242,9 +232,8 @@ main {
       background-color: $cor2-cinzaclaro-color;
       border-radius: 10px;
       width: 28vw;
-      height: 45vh;
-      padding-bottom: 5vh;
-      padding-top: 5vh;
+      height: 50vh;
+      padding: 5vh;
       h6 {
         color: $cor3-cinza-color;
         font-family: "Poppins", bold;
@@ -343,14 +332,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: stretch;
-    }
-
-    .produtos .caixa-produtos {
+    .caixa-produtos {
       display: inline-flex;
       justify-content: center;
       align-items: stretch;
       text-align: center;
       gap: 5vw;
+       }
+      }
 
       .produto {
         border: solid 2px $cor5-verde-color;
@@ -556,7 +545,6 @@ main {
       }
     }
   }
-}
 ////////////////////////////
 ///footer///
 ///////////////////////////
@@ -624,7 +612,8 @@ footer {
   }
 }
 
-/// MOBILE ///
+//////////////// MOBILE ///
+
 @media (min-width: 350px) and (max-width: 700px) {
   ////////////////////////////
   ///main///
@@ -634,13 +623,24 @@ footer {
   }
 
   header {
-    .nav-bar {
-      padding-top: 1vh;
-      display: flex;
-      flex-direction: column;
-      .nav-div {
-        max-width: 650px;
-        min-width: 430px;
+    .topo-site {
+      .nav-bar {
+        padding-top: 1vh;
+        .nav-div {
+          padding: 0;
+          ul {
+            flex-direction: column;
+            gap: 0px;
+            background-color: $cor2-cinzaclaro-color;
+            padding: 2vh;
+             }
+              .logo-recicla {
+                margin: 2vh;
+                 a {
+                  font-size: 35px;
+                 }
+          }
+        }
       }
     }
   }
@@ -650,17 +650,12 @@ footer {
       .home-text-buttons-img {
         display: flex;
         flex-direction: column;
-
+        img {
+          display: none;
+        }
         .front-text-button {
           width: 90%;
         }
-      }
-      .home-text-buttons-img .front-text-button .home-text {
-        h1 {
-          height: 25vh;
-        }
-        max-width: 650px;
-        min-width: 450px;
       }
       .home-text-buttons-img .front-text-button .buttonsfrontpage {
         .doarbutton {
@@ -708,10 +703,15 @@ footer {
         .caixa-produtos {
           display: flex;
           flex-direction: column;
+          align-items: center;
           .produto {
             align-items: center;
             height: 60vh;
-            width: 90%;
+            width: 70%;
+            padding-bottom: 0;
+            .descricao-produtos {
+              padding-bottom: 2vh;
+            }
             img {
               padding-top: 0px;
               width: 100%;
@@ -721,7 +721,7 @@ footer {
               font-weight: 900;
             }
             button {
-              width: 50%;
+              width: 90%;
             }
           }
         }
@@ -768,7 +768,12 @@ footer {
 
     .section-final-text {
       .final-text {
-        width: 90%;
+        width: 100%;
+        gap: 0;
+        .botoes-final-text {
+          justify-content: center;
+          gap: 0;
+        }
       }
     }
   }
@@ -804,6 +809,9 @@ footer {
             max-width: 100%;
           }
         }
+      }
+      .direitos {
+        text-align: center;
       }
     }
   }
