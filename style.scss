@@ -11,20 +11,21 @@ $buttom-hover-color: #21c05c;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  flex-wrap: nowrap;
 }
 header {
   margin: 0 5vw 0 5vw;
+  display: contents;
+  max-width: 700px;
+  min-width: 320px;
   .nav-bar {
-    display: inline;
+    display: list-item;
+    list-style-type: none;
     justify-content: center;
     align-items: center;
     font-family: "Poppins", bold;
   }
   .nav-div {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 3vh 2vw 1vh 2vw;
   }
 
@@ -35,6 +36,7 @@ header {
     list-style: none;
     font-weight: 400;
     gap: 25px;
+    white-space: nowrap;
   }
   .logo-recicla {
     font-size: 2.2rem;
@@ -69,8 +71,7 @@ header {
     text-decoration: none;
   }
 
-  .nav-div .comecar-agora 
-  button {
+  .nav-div .comecar-agora button {
     border: none;
     font-size: 1rem;
     padding: 18px 28px 18px 28px;
@@ -86,21 +87,27 @@ header {
     color: $cor1-offwhite-color;
     text-decoration: none;
   }
-  .nav-line {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $linha-cinza-color;
-    height: 1px;
-    margin: 1vh 2vw 1vh 2vw;
-  }
+  // .nav-line {
+  //   border: none;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background-color: $linha-cinza-color;
+  //   height: 1px;
+  //   margin: 1vh 2vw 1vh 2vw;
+  // }
 }
 
-/////////////////////////
+////////////////////////////
+///main///
+///////////////////////////
 
 main {
-  .section-barradecontagem {
+  margin: auto;
+  display: contents;
+  max-width: 700px;
+  min-width: 320px;
+  .section-inicial {
     .home-text-buttons-img {
       display: flex;
       justify-content: space-evenly;
@@ -119,6 +126,8 @@ main {
           line-height: 130%;
           font-size: 6vh;
           margin-bottom: 20px;
+          display: flex;
+          word-break: break-all;
         }
         .home-text p {
           font-family: "Inter", sans-serif;
@@ -150,7 +159,7 @@ main {
             cursor: pointer;
           }
         }
-        .queroadbutton {
+        .quero-adq-btn {
           border: solid 1px $cor6-azul-color;
           background-color: transparent;
           width: 11.8vw;
@@ -162,32 +171,37 @@ main {
           font-weight: 400;
           font-size: 1rem;
           img {
-            fill:$cor6-azul-color;
+            fill: $cor6-azul-color;
             padding-left: 10px;
           }
         }
       }
     }
   }
-  //////////////////////////////////////
+  ////////////////////////////
+  ///contagem///
+  ///////////////////////////
 
-  .barra-de-contagem {
+  .section-contagem {
     background-color: $cor2-cinzaclaro-color;
-    font-family: "Poppins", bold;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 25vh;
-    width: 100%;
-  }
-  .barra-de-contagem .contador {
-    h2 {
-      color: $cor5-verde-color;
-      font-size: 2.5rem;
+    .barra-de-contagem {
+      background-color: $cor2-cinzaclaro-color;
+      font-family: "Poppins", bold;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      height: 25vh;
+      width: 100%;
     }
-    p {
-      font-size: 1rem;
+    .barra-de-contagem .contador {
+      h2 {
+        color: $cor5-verde-color;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -210,7 +224,9 @@ main {
       font-size: 1.5rem;
     }
   }
-  /////////////////////////////
+  ////////////////////////////
+  ///doadores///
+  ///////////////////////////
 
   .section-doadores {
     display: flex;
@@ -219,53 +235,55 @@ main {
     padding-top: 10vh;
     padding-bottom: 20vh;
     gap: 50px;
-    .caixa-para {
+    .caixas-para {
       display: grid;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       background-color: $cor2-cinzaclaro-color;
       border-radius: 10px;
       width: 28vw;
       height: 45vh;
+      padding-bottom: 5vh;
+      padding-top: 5vh;
       h6 {
-      color: $cor3-cinza-color;
-      font-family: "Poppins", bold;
-      font-weight: 400;
-      font-size: 1rem;
+        color: $cor3-cinza-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+      }
     }
-    }
-    .caixa-para .para-doadores {
+    .caixas-para .para-doadores {
       display: flex;
       justify-content: left;
       align-items: center;
       gap: 10px;
-      
+
       h2 {
-      color: $cor5-verde-color;
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.5rem;
+        color: $cor5-verde-color;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
       }
     }
-    .caixa-para .dica-e-numero {
+    .caixas-para .dica-e-numero {
       display: inline-flex;
       justify-content: left;
       align-items: center;
       gap: 15px;
       h3 {
-      font-family: "Poppins", bold;
-      font-weight: 700;
-      font-size: 1rem;
+        font-family: "Poppins", bold;
+        font-weight: 700;
+        font-size: 1rem;
       }
       h4 {
         color: $cor3-cinza-color;
-      font-family: "Poppins", bold;
-      font-weight: 400;
-      font-size: 1rem;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
       }
     }
 
-    .caixa-para .dica-e-numero .numero {
+    .caixas-para .dica-e-numero .numero {
       background-color: $cor5-verde-color;
       width: 35px;
       aspect-ratio: 1/1;
@@ -275,28 +293,30 @@ main {
       align-items: center;
       p {
         font-family: "Inter", sans-serif;
-        font-size: 1.0rem;
+        font-size: 1rem;
         font-weight: 700;
         color: #ffff;
         text-align: center;
       }
     }
-    .caixa-para .para-adquirentes {
+    .caixas-para .para-adquirentes {
       display: flex;
       justify-content: left;
       align-items: center;
       gap: 10px;
-      
+
       h2 {
-      color: $cor6-azul-color;
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.5rem;
+        color: $cor6-azul-color;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
       }
-}
+    }
   }
 
-////////////////////////////////// 
+  ////////////////////////////
+  ///produtos///
+  ///////////////////////////
 
   .section-produtosdisponiveis {
     background-color: $cor2-cinzaclaro-color;
@@ -306,65 +326,65 @@ main {
       padding: 5vh;
       padding: 5vw;
       h1 {
-      font-family: "Poppins", bold;
-      font-weight: 700;
-      font-size: 2.5rem;
-      padding-bottom: 10px;
+        font-family: "Poppins", bold;
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding-bottom: 10px;
       }
       h2 {
-      color: $cor3-cinza-color;
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.5rem;
+        color: $cor3-cinza-color;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
       }
     }
 
     .produtos {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
     }
 
     .produtos .caixa-produtos {
       display: inline-flex;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
       text-align: center;
       gap: 5vw;
-      
-      .produto1 {
-      border: solid 2px $cor5-verde-color;
-      border-radius: 5px;
-      background-color: #ffff;
-      padding-bottom: 2vh;
-      width: 18vw;
-      height: 50vh;
-      img {
-        width: 17.9vw;
+
+      .produto {
+        border: solid 2px $cor5-verde-color;
+        border-radius: 5px;
+        background-color: #ffff;
+        padding-bottom: 2vh;
+        width: 18vw;
+        height: 50vh;
+        img {
+          width: 17.9vw;
+        }
       }
+      .produto {
+        border: solid 2px $cor5-verde-color;
+        border-radius: 5px;
+        background-color: #ffff;
+        padding-bottom: 2vh;
+        width: 18vw;
+        height: 50vh;
+        img {
+          width: 17.7vw;
+          padding-top: 5px;
+        }
       }
-      .produto2 {
-      border: solid 2px $cor5-verde-color;
-      border-radius: 5px;
-      background-color: #ffff;
-      padding-bottom: 2vh;
-      width: 18vw;
-      height: 50vh;
-      img {
-        width: 17.7vw;
-        padding-top: 5px;
-      }
-      }
-      .produto3 {
-      border: solid 2px $cor5-verde-color;
-      border-radius: 5px;
-      background-color: #ffff;
-      padding-bottom: 2vh;
-      width: 18vw;
-      height: 50vh;
-      img {
-        width: 17.8vw;
-      }
+      .produto {
+        border: solid 2px $cor5-verde-color;
+        border-radius: 5px;
+        background-color: #ffff;
+        padding-bottom: 2vh;
+        width: 18vw;
+        height: 50vh;
+        img {
+          width: 17.8vw;
+        }
       }
       h4 {
         font-family: "Inter", sans-serif;
@@ -375,25 +395,25 @@ main {
         padding-bottom: 1vh;
       }
       .descricao-produtos {
-      margin-left: 2vw;
-      margin-right: 2vw;
-      
-      p {
-        color: $cor3-cinza-color;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 0.8rem;
-        padding-bottom: 2vh;
-        margin: 10px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+
+        p {
+          color: $cor3-cinza-color;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 0.8rem;
+          padding-bottom: 2vh;
+          margin: 10px;
+        }
       }
-    }
       button {
         border: none;
-        width: 10.0vw;
-        height: 4.0vh;
+        width: 10vw;
+        height: 4vh;
         border-radius: 6px;
         background-color: $cor5-verde-color;
         color: #ffff;
@@ -401,92 +421,96 @@ main {
         font-weight: 200;
         font-size: 0.8rem;
         &:hover {
-            background-color: $buttom-hover-color;
-            cursor: pointer;
-          }
+          background-color: $buttom-hover-color;
+          cursor: pointer;
+        }
       }
     }
   }
-////////////////////////////
-    .section-feedback {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      padding: 10vh;
+  ////////////////////////////
+  ///feedback///
+  ///////////////////////////
+  .section-feedback {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10vh;
 
-      .top-text {
+    .top-text {
       display: block;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding-bottom: 8vh;
       h2 {
-      font-family: "Poppins", bold;
-      font-weight: 700;
-      font-size: 2.5rem;
-      }
-       h3 {
-      color: $cor3-cinza-color;
-      font-family: "Inter", sans-serif;
-      font-weight: 400;
-      font-size: 1.5rem;
-      }
-      }
-      .feedbacks {
-        display: flex;
-        gap: 4vw;
-        .feedback {
-          display: block;
-          border: solid #9CA3AF 1px;
-          border-left: solid #9CA3AF 4px;
-          border-radius: 8px;
-          padding: 4vh;
-          padding-bottom: 2vh;
-        }
-
-        }
-      .feedbacks .texto-feedback {
-        color: $cor3-cinza-color;
         font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1.0rem;
-        width: 16vw;
-        padding-bottom: 3vh;
-        padding-top: 2vh;
+        font-weight: 700;
+        font-size: 2.5rem;
       }
-
-        .feedbacks .icon-nome-fb {
-          display: flex;
-          gap: 10px;
-        }
-
-      .feedbacks .nome-feedback {
-        align-self: center;
-        h5 {
-          font-family: "Inter", sans-serif;
-          font-weight: 500;
-          font-size: 0.9rem;
-        }
-         h6 {
-          color: $cor3-cinza-color;
-          font-family: "Inter", sans-serif;
-          font-weight: 400;
-          font-size: 0.9rem;
-        }
+      h3 {
+        color: $cor3-cinza-color;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
       }
     }
-
-    ///////////////////////////// 
-    
-    .section-final-text {
-      background-color: $cor2-cinzaclaro-color;
-      display: flex;
+    .feedbacks {
+      display: inline-flex;
       justify-content: center;
-      text-align: center;
-      padding: 7vh;
+      gap: 4vw;
+      .feedback {
+        display: block;
+        border: solid #9ca3af 1px;
+        border-left: solid #9ca3af 4px;
+        border-radius: 8px;
+        padding: 4vh;
+        padding-bottom: 2vh;
+      }
+    }
+    .feedbacks .texto-feedback {
+      color: $cor3-cinza-color;
+      font-family: "Poppins", bold;
+      font-weight: 400;
+      font-size: 1rem;
+      width: 16vw;
+      padding-bottom: 3vh;
+      padding-top: 2vh;
+    }
+
+    .feedbacks .icon-nome-fb {
+      display: flex;
+      gap: 10px;
+    }
+
+    .feedbacks .nome-feedback {
+      align-self: center;
+      h5 {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+      h6 {
+        color: $cor3-cinza-color;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  ////////////////////////////
+  ///FINAL-TEXT///
+  ///////////////////////////
+
+  .section-final-text {
+    background-color: $cor2-cinzaclaro-color;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7vh;
     .final-text {
       width: 40vw;
-      h1{
+      h1 {
         font-family: "Poppins", bold;
         font-weight: 700;
         font-size: 2.5rem;
@@ -500,100 +524,287 @@ main {
         line-height: 150%;
         padding-bottom: 3vh;
       }
-      
+
       .botoes-final-text {
         display: inline-flex;
         gap: 1vw;
-      .btn-comecar-agora {
-        border: none;
-        font-size: 1rem;
-        padding: 15px 40px 15px 40px;
-        border-radius: 8px;
-        background-color: $cor5-verde-color;
-        color: $cor1-offwhite-color;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
-        &:hover {
-          background-color: $buttom-hover-color;
-          cursor: pointer;
+        .btn-comecar-agora {
+          border: none;
+          font-size: 1rem;
+          padding: 15px 40px 15px 40px;
+          border-radius: 8px;
+          background-color: $cor5-verde-color;
+          color: $cor1-offwhite-color;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+          &:hover {
+            background-color: $buttom-hover-color;
+            cursor: pointer;
+          }
+        }
+        .btn-saber-mais {
+          font-size: 1rem;
+          padding: 15px 40px 15px 40px;
+          border-radius: 8px;
+          border: solid 1px $cor5-verde-color;
+          color: $cor5-verde-color;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+        }
       }
-    }
-     .btn-saber-mais {
-        font-size: 1rem;
-        padding: 15px 40px 15px 40px;
-        border-radius: 8px;
-        border: solid 1px $cor5-verde-color;
-        color: $cor5-verde-color;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
-      }
-    }
     }
   }
 }
-  /////////////////////////
-  
-  footer {
-    .section-footer {
-      background-color: $cor4-marinho-color;
-      padding-top: 4vh;
-      padding-bottom: 2vh;
+////////////////////////////
+///footer///
+///////////////////////////
 
-      h5 {
-        color: #ffff;
-        font-family: "Poppins", bold;
-        font-weight: 700;
-        font-size: 1.2rem;
-        line-height: 100%;
-        padding-bottom: 3vh;
+footer {
+  .section-footer {
+    background-color: $cor4-marinho-color;
+    padding-top: 4vh;
+    padding-bottom: 2vh;
+
+    h5 {
+      color: #ffff;
+      font-family: "Poppins", bold;
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 100%;
+      padding-bottom: 3vh;
+    }
+
+    p {
+      color: #9ca3af;
+      font-family: "Poppins", bold;
+      font-weight: 400;
+      font-size: 1rem;
+      max-width: 12vw;
+      padding-top: 1vh;
+    }
+    .div-links {
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 3vh;
+      .reciclatech {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img {
+          padding-bottom: 3vh;
+          height: 7vh;
+        }
       }
-
-      p {
-        color: #9CA3AF;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
-        max-width: 12vw;
+      .icons-socialmedia {
         padding-top: 1vh;
-      }
-      .div-links {
-        display: flex;
-        justify-content: space-evenly;
-        padding-bottom: 3vh;
-        .reciclatech {
-          display: flex;
-          align-items: center;
-          gap: 15px;
-          img {
-            padding-bottom: 3vh;
-            height: 7vh;
-          }
-        }
-        .icons-socialmedia {
-          padding-top: 1vh;
-          display: inline-flex;
-          gap: 15px;
-        }
-        }
-      }
-      .line-footer {
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $linha-cinza-color;
-        height: 0.5px;
-        margin: 1vh 2vw 1vh 2vw;
-      }
-      .direitos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #9CA3AF;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
+        display: inline-flex;
+        gap: 15px;
       }
     }
+  }
+  .line-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $linha-cinza-color;
+    height: 0.5px;
+    margin: 1vh 2vw 1vh 2vw;
+  }
+  .direitos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9ca3af;
+    font-family: "Poppins", bold;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}
+
+/// MOBILE ///
+@media (min-width: 350px) and (max-width: 700px) {
+  ////////////////////////////
+  ///main///
+  ///////////////////////////
+  * {
+    overflow-x: hidden;
+  }
+
+  header {
+    .nav-bar {
+      padding-top: 1vh;
+      display: flex;
+      flex-direction: column;
+      .nav-div {
+        max-width: 650px;
+        min-width: 430px;
+      }
+    }
+  }
+
+  main {
+    .section-inicial {
+      .home-text-buttons-img {
+        display: flex;
+        flex-direction: column;
+
+        .front-text-button {
+          width: 90%;
+        }
+      }
+      .home-text-buttons-img .front-text-button .home-text {
+        h1 {
+          height: 25vh;
+        }
+        max-width: 650px;
+        min-width: 450px;
+      }
+      .home-text-buttons-img .front-text-button .buttonsfrontpage {
+        .doarbutton {
+          width: 250px;
+        }
+        .quero-adq-btn {
+          width: 250px;
+        }
+      }
+    }
+    ////////////////////////////
+    ///BARRA DE CONTAGEM///
+    ///////////////////////////
+
+    .section-contagem {
+      .barra-de-contagem {
+        display: inline;
+        flex-direction: column;
+        .contador {
+          padding-bottom: 3vh;
+          padding-top: 3vh;
+        }
+      }
+    }
+
+    ////////////////////////////
+    /// DOADORES E ADQUIRENTES///
+    ///////////////////////////
+
+    .section-doadores {
+      display: flex;
+      flex-direction: column;
+      .caixas-para {
+        width: 90%;
+        height: 70vh;
+      }
+    }
+
+    ////////////////////////////
+    /// PRODUTOS///
+    ///////////////////////////
+
+    .section-produtosdisponiveis {
+      .produtos {
+        .caixa-produtos {
+          display: flex;
+          flex-direction: column;
+          .produto {
+            align-items: center;
+            height: 60vh;
+            width: 90%;
+            img {
+              padding-top: 0px;
+              width: 100%;
+            }
+            h4 {
+              font-size: 2rem;
+              font-weight: 900;
+            }
+            button {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    ////////////////////////////
+    /// feedback///
+    ///////////////////////////
+
+    .section-feedback {
+      gap: 30px;
+      padding-bottom: 5vh;
+      padding-top: 5vh;
+      .feedbacks {
+        display: contents;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+      }
+      .feedbacks .feedback {
+        padding: 0px;
+        .cinco-estrelas {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 2vh;
+          padding-top: 1vh;
+        }
+        .icon-nome-fb {
+          padding: 2vh;
+        }
+      }
+      .feedbacks .feedback .texto-feedback {
+        width: 90%;
+        text-justify: distribute-all-lines;
+        padding-left: 2vh;
+      }
+    }
+    ////////////////////////////
+    /// FINAL TEXT///
+    ///////////////////////////
+
+    .section-final-text {
+      .final-text {
+        width: 90%;
+      }
+    }
+  }
+
+  ////////////////////////////
+  /// FOOTER ///
+  ///////////////////////////
+  footer {
+    .section-footer {
+      .div-links {
+        flex-direction: column;
+        align-items: center;
+        .reciclatech {
+          img {
+            display: flex;
+            padding-bottom: 0;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .coluna {
+          width: 100%;
+          text-align: center;
+          justify-content: center;
+          padding-bottom: 3vh;
+          h5 {
+            overflow-y: hidden;
+            padding: 0;
+          }
+          p {
+            padding-bottom: 0;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

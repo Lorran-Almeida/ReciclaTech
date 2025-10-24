@@ -2,22 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  flex-wrap: nowrap;
 }
 
 header {
   margin: 0 5vw 0 5vw;
+  display: contents;
+  max-width: 700px;
+  min-width: 320px;
 }
 header .nav-bar {
-  display: inline;
+  display: list-item;
+  list-style-type: none;
   justify-content: center;
   align-items: center;
   font-family: "Poppins", bold;
 }
 header .nav-div {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 3vh 2vw 1vh 2vw;
 }
 header .nav-div ul {
@@ -27,6 +28,7 @@ header .nav-div ul {
   list-style: none;
   font-weight: 400;
   gap: 25px;
+  white-space: nowrap;
 }
 header .logo-recicla {
   font-size: 2.2rem;
@@ -75,46 +77,45 @@ header .nav-div .comecar-agora button a {
   color: #f0fdf4;
   text-decoration: none;
 }
-header .nav-line {
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #b4aeae;
-  height: 1px;
-  margin: 1vh 2vw 1vh 2vw;
-}
 
-main .section-barradecontagem .home-text-buttons-img {
+main {
+  margin: auto;
+  display: contents;
+  max-width: 700px;
+  min-width: 320px;
+}
+main .section-inicial .home-text-buttons-img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 10vh 5vw 10vh 5vw;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .home-text {
+main .section-inicial .home-text-buttons-img .front-text-button .home-text {
   display: flex;
   flex-direction: column;
   color: #1f2937;
   width: 40vw;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .home-text h1 {
+main .section-inicial .home-text-buttons-img .front-text-button .home-text h1 {
   font-family: "Poppins", bold;
   font-weight: 700;
   line-height: 130%;
   font-size: 6vh;
   margin-bottom: 20px;
+  display: flex;
+  word-break: break-all;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .home-text p {
+main .section-inicial .home-text-buttons-img .front-text-button .home-text p {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .buttonsfrontpage {
+main .section-inicial .home-text-buttons-img .front-text-button .buttonsfrontpage {
   display: flex;
   justify-content: left;
   gap: 40px;
   padding-top: 20px;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .doarbutton {
+main .section-inicial .home-text-buttons-img .front-text-button .doarbutton {
   border: none;
   width: 11.8vw;
   height: 6.8vh;
@@ -126,14 +127,14 @@ main .section-barradecontagem .home-text-buttons-img .front-text-button .doarbut
   font-weight: 400;
   font-size: 1rem;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .doarbutton img {
+main .section-inicial .home-text-buttons-img .front-text-button .doarbutton img {
   padding-left: 10px;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .doarbutton:hover {
+main .section-inicial .home-text-buttons-img .front-text-button .doarbutton:hover {
   background-color: #21c05c;
   cursor: pointer;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .queroadbutton {
+main .section-inicial .home-text-buttons-img .front-text-button .quero-adq-btn {
   border: solid 1px #2563eb;
   background-color: transparent;
   width: 11.8vw;
@@ -145,11 +146,14 @@ main .section-barradecontagem .home-text-buttons-img .front-text-button .queroad
   font-weight: 400;
   font-size: 1rem;
 }
-main .section-barradecontagem .home-text-buttons-img .front-text-button .queroadbutton img {
+main .section-inicial .home-text-buttons-img .front-text-button .quero-adq-btn img {
   fill: #2563eb;
   padding-left: 10px;
 }
-main .barra-de-contagem {
+main .section-contagem {
+  background-color: #f3f5f8;
+}
+main .section-contagem .barra-de-contagem {
   background-color: #f3f5f8;
   font-family: "Poppins", bold;
   display: flex;
@@ -159,11 +163,11 @@ main .barra-de-contagem {
   height: 25vh;
   width: 100%;
 }
-main .barra-de-contagem .contador h2 {
+main .section-contagem .barra-de-contagem .contador h2 {
   color: #16a34a;
   font-size: 2.5rem;
 }
-main .barra-de-contagem .contador p {
+main .section-contagem .barra-de-contagem .contador p {
   font-size: 1rem;
 }
 main .como-funciona {
@@ -191,51 +195,53 @@ main .section-doadores {
   padding-bottom: 20vh;
   gap: 50px;
 }
-main .section-doadores .caixa-para {
+main .section-doadores .caixas-para {
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   background-color: #f3f5f8;
   border-radius: 10px;
   width: 28vw;
   height: 45vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
 }
-main .section-doadores .caixa-para h6 {
+main .section-doadores .caixas-para h6 {
   color: #4b5563;
   font-family: "Poppins", bold;
   font-weight: 400;
   font-size: 1rem;
 }
-main .section-doadores .caixa-para .para-doadores {
+main .section-doadores .caixas-para .para-doadores {
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 10px;
 }
-main .section-doadores .caixa-para .para-doadores h2 {
+main .section-doadores .caixas-para .para-doadores h2 {
   color: #16a34a;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
-main .section-doadores .caixa-para .dica-e-numero {
+main .section-doadores .caixas-para .dica-e-numero {
   display: inline-flex;
   justify-content: left;
   align-items: center;
   gap: 15px;
 }
-main .section-doadores .caixa-para .dica-e-numero h3 {
+main .section-doadores .caixas-para .dica-e-numero h3 {
   font-family: "Poppins", bold;
   font-weight: 700;
   font-size: 1rem;
 }
-main .section-doadores .caixa-para .dica-e-numero h4 {
+main .section-doadores .caixas-para .dica-e-numero h4 {
   color: #4b5563;
   font-family: "Poppins", bold;
   font-weight: 400;
   font-size: 1rem;
 }
-main .section-doadores .caixa-para .dica-e-numero .numero {
+main .section-doadores .caixas-para .dica-e-numero .numero {
   background-color: #16a34a;
   width: 35px;
   aspect-ratio: 1/1;
@@ -244,20 +250,20 @@ main .section-doadores .caixa-para .dica-e-numero .numero {
   justify-content: center;
   align-items: center;
 }
-main .section-doadores .caixa-para .dica-e-numero .numero p {
+main .section-doadores .caixas-para .dica-e-numero .numero p {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: white;
   text-align: center;
 }
-main .section-doadores .caixa-para .para-adquirentes {
+main .section-doadores .caixas-para .para-adquirentes {
   display: flex;
   justify-content: left;
   align-items: center;
   gap: 10px;
 }
-main .section-doadores .caixa-para .para-adquirentes h2 {
+main .section-doadores .caixas-para .para-adquirentes h2 {
   color: #2563eb;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -286,16 +292,16 @@ main .section-produtosdisponiveis .produtos-disponiveis h2 {
 main .section-produtosdisponiveis .produtos {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 main .section-produtosdisponiveis .produtos .caixa-produtos {
   display: inline-flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
   gap: 5vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto1 {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -303,10 +309,10 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto1 {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto1 img {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
   width: 17.9vw;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto2 {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -314,11 +320,11 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto2 {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto2 img {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
   width: 17.7vw;
   padding-top: 5px;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto3 {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
   border: solid 2px #16a34a;
   border-radius: 5px;
   background-color: white;
@@ -326,7 +332,7 @@ main .section-produtosdisponiveis .produtos .caixa-produtos .produto3 {
   width: 18vw;
   height: 50vh;
 }
-main .section-produtosdisponiveis .produtos .caixa-produtos .produto3 img {
+main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
   width: 17.8vw;
 }
 main .section-produtosdisponiveis .produtos .caixa-produtos h4 {
@@ -392,13 +398,14 @@ main .section-feedback .top-text h3 {
   font-size: 1.5rem;
 }
 main .section-feedback .feedbacks {
-  display: flex;
+  display: inline-flex;
+  justify-content: center;
   gap: 4vw;
 }
 main .section-feedback .feedbacks .feedback {
   display: block;
-  border: solid #9CA3AF 1px;
-  border-left: solid #9CA3AF 4px;
+  border: solid #9ca3af 1px;
+  border-left: solid #9ca3af 4px;
   border-radius: 8px;
   padding: 4vh;
   padding-bottom: 2vh;
@@ -497,7 +504,7 @@ footer .section-footer h5 {
   padding-bottom: 3vh;
 }
 footer .section-footer p {
-  color: #9CA3AF;
+  color: #9ca3af;
   font-family: "Poppins", bold;
   font-weight: 400;
   font-size: 1rem;
@@ -536,8 +543,137 @@ footer .direitos {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #9CA3AF;
+  color: #9ca3af;
   font-family: "Poppins", bold;
   font-weight: 400;
   font-size: 1rem;
+}
+
+@media (min-width: 350px) and (max-width: 700px) {
+  * {
+    overflow-x: hidden;
+  }
+  header .nav-bar {
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header .nav-bar .nav-div {
+    max-width: 650px;
+    min-width: 430px;
+  }
+  main .section-inicial .home-text-buttons-img {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-inicial .home-text-buttons-img .front-text-button {
+    width: 90%;
+  }
+  main .section-inicial .home-text-buttons-img .front-text-button .home-text {
+    max-width: 650px;
+    min-width: 450px;
+  }
+  main .section-inicial .home-text-buttons-img .front-text-button .home-text h1 {
+    height: 25vh;
+  }
+  main .section-inicial .home-text-buttons-img .front-text-button .buttonsfrontpage .doarbutton {
+    width: 250px;
+  }
+  main .section-inicial .home-text-buttons-img .front-text-button .buttonsfrontpage .quero-adq-btn {
+    width: 250px;
+  }
+  main .section-contagem .barra-de-contagem {
+    display: inline;
+    flex-direction: column;
+  }
+  main .section-contagem .barra-de-contagem .contador {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+  }
+  main .section-doadores {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-doadores .caixas-para {
+    width: 90%;
+    height: 70vh;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos {
+    display: flex;
+    flex-direction: column;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos .produto {
+    align-items: center;
+    height: 60vh;
+    width: 90%;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos .produto img {
+    padding-top: 0px;
+    width: 100%;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos .produto h4 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  main .section-produtosdisponiveis .produtos .caixa-produtos .produto button {
+    width: 50%;
+  }
+  main .section-feedback {
+    gap: 30px;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+  main .section-feedback .feedbacks {
+    display: contents;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  main .section-feedback .feedbacks .feedback {
+    padding: 0px;
+  }
+  main .section-feedback .feedbacks .feedback .cinco-estrelas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
+  }
+  main .section-feedback .feedbacks .feedback .icon-nome-fb {
+    padding: 2vh;
+  }
+  main .section-feedback .feedbacks .feedback .texto-feedback {
+    width: 90%;
+    text-justify: distribute-all-lines;
+    padding-left: 2vh;
+  }
+  main .section-final-text .final-text {
+    width: 90%;
+  }
+  footer .section-footer .div-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .section-footer .div-links .reciclatech img {
+    display: flex;
+    padding-bottom: 0;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .section-footer .div-links .coluna {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3vh;
+  }
+  footer .section-footer .div-links .coluna h5 {
+    overflow-y: hidden;
+    padding: 0;
+  }
+  footer .section-footer .div-links .coluna p {
+    padding-bottom: 0;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
