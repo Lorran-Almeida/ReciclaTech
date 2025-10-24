@@ -69,7 +69,8 @@ header {
     text-decoration: none;
   }
 
-  .nav-div .comecar-agora button {
+  .nav-div .comecar-agora 
+  button {
     border: none;
     font-size: 1rem;
     padding: 18px 28px 18px 28px;
@@ -85,7 +86,7 @@ header {
     color: $cor1-offwhite-color;
     text-decoration: none;
   }
-  .line {
+  .nav-line {
     border: none;
     display: flex;
     justify-content: center;
@@ -99,76 +100,73 @@ header {
 /////////////////////////
 
 main {
-  .first-section {
+  .section-barradecontagem {
     .home-text-buttons-img {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10vh 5vw 10vh 5vw;
-    .front-text-button {
-      .home-text {
-        display: flex;
-        flex-direction: column;
-        color: $cor4-marinho-color;
-        width: 40vw;
-      }
-      .home-text h1 {
-        font-family: "Poppins", bold;
-        font-weight: 700;
-        line-height: 130%;
-        font-size: 6vh;
-        margin-bottom: 20px;
-      }
-      .home-text p {
-        font-family: "Inter", sans-serif;
-        font-size: 1.2rem;
-      }
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 10vh 5vw 10vh 5vw;
+      .front-text-button {
+        .home-text {
+          display: flex;
+          flex-direction: column;
+          color: $cor4-marinho-color;
+          width: 40vw;
+        }
+        .home-text h1 {
+          font-family: "Poppins", bold;
+          font-weight: 700;
+          line-height: 130%;
+          font-size: 6vh;
+          margin-bottom: 20px;
+        }
+        .home-text p {
+          font-family: "Inter", sans-serif;
+          font-size: 1.2rem;
+        }
 
-      .buttonsfrontpage {
-        display: flex;
-        justify-content: left;
-        gap: 40px;
-        padding-top: 20px;
-      }
-      .doarbutton {
-        border: none;
-        width: 190px;
-        height: 62px;
-        gap: 10px;
-        border-radius: 6px;
-        background-color: $cor5-verde-color;
-        color: $cor1-offwhite-color;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
-        img {
-          padding-left: 10px;
+        .buttonsfrontpage {
+          display: flex;
+          justify-content: left;
+          gap: 40px;
+          padding-top: 20px;
         }
-        &:hover {
-          background-color: $buttom-hover-color;
-          cursor: pointer;
+        .doarbutton {
+          border: none;
+          width: 11.8vw;
+          height: 6.8vh;
+          gap: 10px;
+          border-radius: 6px;
+          background-color: $cor5-verde-color;
+          color: $cor1-offwhite-color;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+          img {
+            padding-left: 10px;
+          }
+          &:hover {
+            background-color: $buttom-hover-color;
+            cursor: pointer;
+          }
         }
-      }
-      .queroadbutton {
-        border: solid 1px $cor6-azul-color;
-        background-color: transparent;
-        width: 190px;
-        height: 62px;
-        gap: 10px;
-        border-radius: 6px;
-        color: $cor6-azul-color;
-        font-family: "Poppins", bold;
-        font-weight: 400;
-        font-size: 1rem;
-        img {
+        .queroadbutton {
+          border: solid 1px $cor6-azul-color;
+          background-color: transparent;
+          width: 11.8vw;
+          height: 6.8vh;
+          gap: 10px;
+          border-radius: 6px;
           color: $cor6-azul-color;
-          padding-left: 10px;
+          font-family: "Poppins", bold;
+          font-weight: 400;
+          font-size: 1rem;
+          img {
+            fill:$cor6-azul-color;
+            padding-left: 10px;
+          }
         }
       }
-    }
-    }
-    .simbolo-circuitos {
-    
     }
   }
   //////////////////////////////////////
@@ -193,6 +191,8 @@ main {
     }
   }
 
+  //////////////////////////
+
   .como-funciona {
     display: inline-block;
     flex-direction: left;
@@ -203,90 +203,397 @@ main {
       font-family: "Poppins", bold;
       font-weight: 700;
       font-size: 2.5rem;
+      padding-bottom: 20px;
     }
     p {
       font-family: "Inter", sans-serif;
       font-size: 1.5rem;
     }
   }
-  .caixas-doadores-adquirentes {
+  /////////////////////////////
+
+  .section-doadores {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .caixas-doadores-adquirentes .doadores {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    gap: 50px;
+    .caixa-para {
+      display: grid;
+      justify-content: center;
+      align-items: center;
       background-color: $cor2-cinzaclaro-color;
       border-radius: 10px;
-      gap: 80px;
-      padding-top: 60px;
-      width: 450px;
-      padding: 45px;
+      width: 28vw;
+      height: 45vh;
+      h6 {
+      color: $cor3-cinza-color;
+      font-family: "Poppins", bold;
+      font-weight: 400;
+      font-size: 1rem;
     }
-      .caixas-doadores-adquirentes .doadores  .paraDoadores {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        padding-bottom: 15px;
-        h2 {
-          font-family: "Inter", sans-serif;
-          font-size: 1.5rem;
-          font-weight: 400;
-          color: $cor5-verde-color;
-        }
+    }
+    .caixa-para .para-doadores {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      gap: 10px;
+      
+      h2 {
+      color: $cor5-verde-color;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
       }
-      p {
-        display: flex;
-        justify-content: center;
-        font-family: "Poppins", bold;
-        font-size: 1rem;
-        padding-bottom: 10px;
+    }
+    .caixa-para .dica-e-numero {
+      display: inline-flex;
+      justify-content: left;
+      align-items: center;
+      gap: 15px;
+      h3 {
+      font-family: "Poppins", bold;
+      font-weight: 700;
+      font-size: 1rem;
       }
-      .numero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        color: #ffffff;
-        background-color: $cor5-verde-color;
-        height: 32px;
-        width: 32px;
-        border-radius: 32px;
-      }
-      .dica {
+      h4 {
+        color: $cor3-cinza-color;
+      font-family: "Poppins", bold;
+      font-weight: 400;
+      font-size: 1rem;
       }
     }
 
-@media (max-width: 768px) {
-  header {
-    .nav-bar {
-      max-width: 30vw;
-      .logo-recicla {
-        display: flex;
-        justify-content: left;
+    .caixa-para .dica-e-numero .numero {
+      background-color: $cor5-verde-color;
+      width: 35px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-family: "Inter", sans-serif;
+        font-size: 1.0rem;
+        font-weight: 700;
+        color: #ffff;
+        text-align: center;
       }
     }
-    .nav-div {
-      flex-direction: column;
-      align-items: left;
-      padding-top: 5vh;
-    }
-    .nav-div ul {
+    .caixa-para .para-adquirentes {
       display: flex;
       justify-content: left;
-      padding-top: 2vh;
-      gap: 2vw;
+      align-items: center;
+      gap: 10px;
+      
+      h2 {
+      color: $cor6-azul-color;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      }
+}
+  }
+
+////////////////////////////////// 
+
+  .section-produtosdisponiveis {
+    background-color: $cor2-cinzaclaro-color;
+    padding-bottom: 10vw;
+
+    .produtos-disponiveis {
+      padding: 5vh;
+      padding: 5vw;
+      h1 {
+      font-family: "Poppins", bold;
+      font-weight: 700;
+      font-size: 2.5rem;
+      padding-bottom: 10px;
+      }
+      h2 {
+      color: $cor3-cinza-color;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      }
     }
-    .nav-div .comecar-agora button {
+
+    .produtos {
       display: flex;
-      justify-content: right;
-      padding: 3vw 6vw 3vw 6vw;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .produtos .caixa-produtos {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 5vw;
+      
+      .produto1 {
+      border: solid 2px $cor5-verde-color;
+      border-radius: 5px;
+      background-color: #ffff;
+      padding-bottom: 2vh;
+      width: 18vw;
+      height: 50vh;
+      img {
+        width: 17.9vw;
+      }
+      }
+      .produto2 {
+      border: solid 2px $cor5-verde-color;
+      border-radius: 5px;
+      background-color: #ffff;
+      padding-bottom: 2vh;
+      width: 18vw;
+      height: 50vh;
+      img {
+        width: 17.7vw;
+        padding-top: 5px;
+      }
+      }
+      .produto3 {
+      border: solid 2px $cor5-verde-color;
+      border-radius: 5px;
+      background-color: #ffff;
+      padding-bottom: 2vh;
+      width: 18vw;
+      height: 50vh;
+      img {
+        width: 17.8vw;
+      }
+      }
+      h4 {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+      }
+      .descricao-produtos {
+      margin-left: 2vw;
+      margin-right: 2vw;
+      
+      p {
+        color: $cor3-cinza-color;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding-bottom: 2vh;
+        margin: 10px;
+      }
+    }
+      button {
+        border: none;
+        width: 10.0vw;
+        height: 4.0vh;
+        border-radius: 6px;
+        background-color: $cor5-verde-color;
+        color: #ffff;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+        font-size: 0.8rem;
+        &:hover {
+            background-color: $buttom-hover-color;
+            cursor: pointer;
+          }
+      }
     }
   }
-  main {
-    .home-text-buttons-img {
-      width: 150vw;
-      background-color: red;
+////////////////////////////
+    .section-feedback {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding: 10vh;
+
+      .top-text {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 8vh;
+      h2 {
+      font-family: "Poppins", bold;
+      font-weight: 700;
+      font-size: 2.5rem;
       }
+       h3 {
+      color: $cor3-cinza-color;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 1.5rem;
+      }
+      }
+      .feedbacks {
+        display: flex;
+        gap: 4vw;
+        .feedback {
+          display: block;
+          border: solid #9CA3AF 1px;
+          border-left: solid #9CA3AF 4px;
+          border-radius: 8px;
+          padding: 4vh;
+          padding-bottom: 2vh;
+        }
+
+        }
+      .feedbacks .texto-feedback {
+        color: $cor3-cinza-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1.0rem;
+        width: 16vw;
+        padding-bottom: 3vh;
+        padding-top: 2vh;
+      }
+
+        .feedbacks .icon-nome-fb {
+          display: flex;
+          gap: 10px;
+        }
+
+      .feedbacks .nome-feedback {
+        align-self: center;
+        h5 {
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 0.9rem;
+        }
+         h6 {
+          color: $cor3-cinza-color;
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    ///////////////////////////// 
+    
+    .section-final-text {
+      background-color: $cor2-cinzaclaro-color;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 7vh;
+    .final-text {
+      width: 40vw;
+      h1{
+        font-family: "Poppins", bold;
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding-bottom: 1vh;
+      }
+
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 150%;
+        padding-bottom: 3vh;
+      }
+      
+      .botoes-final-text {
+        display: inline-flex;
+        gap: 1vw;
+      .btn-comecar-agora {
+        border: none;
+        font-size: 1rem;
+        padding: 15px 40px 15px 40px;
+        border-radius: 8px;
+        background-color: $cor5-verde-color;
+        color: $cor1-offwhite-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+        &:hover {
+          background-color: $buttom-hover-color;
+          cursor: pointer;
+      }
+    }
+     .btn-saber-mais {
+        font-size: 1rem;
+        padding: 15px 40px 15px 40px;
+        border-radius: 8px;
+        border: solid 1px $cor5-verde-color;
+        color: $cor5-verde-color;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
+    }
   }
 }
+  /////////////////////////
+  
+  footer {
+    .section-footer {
+      background-color: $cor4-marinho-color;
+      padding-top: 4vh;
+      padding-bottom: 2vh;
+
+      h5 {
+        color: #ffff;
+        font-family: "Poppins", bold;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 100%;
+        padding-bottom: 3vh;
+      }
+
+      p {
+        color: #9CA3AF;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+        max-width: 12vw;
+        padding-top: 1vh;
+      }
+      .div-links {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 3vh;
+        .reciclatech {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          img {
+            padding-bottom: 3vh;
+            height: 7vh;
+          }
+        }
+        .icons-socialmedia {
+          padding-top: 1vh;
+          display: inline-flex;
+          gap: 15px;
+        }
+        }
+      }
+      .line-footer {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $linha-cinza-color;
+        height: 0.5px;
+        margin: 1vh 2vw 1vh 2vw;
+      }
+      .direitos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #9CA3AF;
+        font-family: "Poppins", bold;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+    }
